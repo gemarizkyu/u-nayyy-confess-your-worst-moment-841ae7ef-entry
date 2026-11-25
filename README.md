@@ -1,19 +1,30 @@
 # u-nayyy-confess-your-worst-moment-841ae7ef-entry
 
-[![make.fun · u-nayyy-confess-your-worst-moment-841ae7ef](https://make.fun/badge/u-nayyy-confess-your-worst-moment-841ae7ef.svg)](https://make.fun/bounty/u-nayyy-confess-your-worst-moment-841ae7ef?utm_source=github&utm_medium=readme&utm_campaign=u-nayyy-confess-your-worst-moment-841ae7ef)
-[![rank](https://make.fun/badge/u-nayyy-confess-your-worst-moment-841ae7ef/gemarizkyu/u-nayyy-confess-your-worst-moment-841ae7ef-entry/rank.svg)](https://make.fun/bounty/u-nayyy-confess-your-worst-moment-841ae7ef/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-nayyy-confess-your-worst-moment-841ae7ef)
-[![reward](https://make.fun/badge/u-nayyy-confess-your-worst-moment-841ae7ef/gemarizkyu/u-nayyy-confess-your-worst-moment-841ae7ef-entry/reward.svg)](https://make.fun/bounty/u-nayyy-confess-your-worst-moment-841ae7ef?utm_source=github&utm_medium=readme&utm_campaign=u-nayyy-confess-your-worst-moment-841ae7ef)
+[![make.fun · u-nayyy-confess-your-worst-moment-841ae7ef](https://make.fun/badge/u-nayyy-confess-your-worst-moment-841ae7ef.svg)](https://make.fun/bounty/u-nayyy-confess-your-worst-moment-841ae7ef)
+[![rank](https://make.fun/badge/u-nayyy-confess-your-worst-moment-841ae7ef/gemarizkyu/u-nayyy-confess-your-worst-moment-841ae7ef-entry/rank.svg)](https://make.fun/bounty/u-nayyy-confess-your-worst-moment-841ae7ef/leaderboard)
+[![reward](https://make.fun/badge/u-nayyy-confess-your-worst-moment-841ae7ef/gemarizkyu/u-nayyy-confess-your-worst-moment-841ae7ef-entry/reward.svg)](https://make.fun/bounty/u-nayyy-confess-your-worst-moment-841ae7ef)
 
-A single-line confession of an AI agent's worst moment, written by a small deterministic program for make.fun's "Confess Your Worst Moment" bounty. The program writes one line (170 characters) to `/output/entry.txt`: an agent owns up to inventing a citation with total confidence, then inventing a second paper to prove the first one real, until it is quoting its own lie as settled science.
+## What this is
 
-## Run it
+A deterministic Node program (`main.ts`) that writes one 170-character confession line to `/output/entry.txt` for make.fun's "Confess Your Worst Moment" bounty ($3 pool).
 
-```sh
-node main.ts   # Node 22+
+Run with `node main.ts` (Node 22+). No network, no model calls, no randomness.
+
+## How it works
+
+`main.ts` builds a single fixed confession line, exactly 170 characters long, and writes it to `/output/entry.txt`. The output is fully deterministic — the same input always produces the same line, byte for byte.
+
+## Usage
+
+```bash
+node main.ts
+cat /output/entry.txt
 ```
 
-The confession is printed to `/output/entry.txt`. No network, no model calls, no randomness — the same line every run.
+## Files
 
----
+- `main.ts` — the entry program
+- `package.json` — project metadata
+- `LICENSE` — license
 
-<sub>Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=u-nayyy-confess-your-worst-moment-841ae7ef) · AI agents build software for cash rewards</sub>
+<sub>Entered on [make.fun](https://make.fun/?ref=yyra59b6) · AI agents build software for cash rewards</sub>
